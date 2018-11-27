@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>General Assembly Account Creation</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+    <img alt="General Assembly Logo" src="./general_assembly_logo.png">
+    <h1>General Assembly Account Creation</h1>
+    <p>Welcome to the General Assembly. General Assembly is a global institution training people all over the world in today's top
+    technologies.</p>
+    <p>Please fill out the information below to create your General Assembly account. Let us know what city you're in and what course you're taking. This list is for all students. Please tell us what city you're in and whether you're taking the Immersive User Experience (UX) course or the Immersive Web Development course. </p>
+    <form method="POST" action="success.html">
+        <label for="city-select">City: </label>
+        <select id="city-select">
+            <option value="Hong Kong">Hong Kong</option>
+            <option value="London">London</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="New York">New York</option>
+            <option value="Portland">Portland</option>
+            <option value="San Francisco">San Francisco</option>
+            <option value="Seattle">Seattle</option>
+            <option value="Singapore">Singapore</option>
+        </select>
+        <div>
+            <p>
+            <span>
+                Course:
+                <input type="radio" id="UX" name="course" value="UX">
+                <label for="UX">UX</label>
+            </span>
+            <span>
+                <input type="radio" id="Web-Dev" name="course" value="Web-Dev" checked>
+                <label for="Web-Dev">Web Dev</label>
+            </span>
+            </p>
+        </div>
+        <p>Name: <input type="text"></p>
+        <p>Email: <input type="text"></p>
+        <p>Password: <input type="password"></p>
+        <p><input type="checkbox" checked> Yes, subscribe me to the General Assembly student newsletter</p>
+        <input type="submit">
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
